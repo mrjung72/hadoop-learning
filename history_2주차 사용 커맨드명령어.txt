@@ -1,0 +1,251 @@
+    1  poweroff 
+    2  ll
+    3  pwd
+    4  hadoop fs
+    5  fs
+    6  hadoop fs
+    7  hadoop fs -ls
+    8  ll
+    9  ./start_ambari.sh 
+   10  ll
+   11  ./start_hbase.sh 
+   26  ll
+   27  cd /media/sf_workspace/
+   33  ll
+   34  cd sf_workspace/
+   43  ll
+   44  find . -name hue
+   45  hadoop
+   46  whoami
+   47  hadoop fs -ls
+   48  ls
+   55  pwd
+   56  hadoop fs -ls /
+   57  ll
+   58  find . -name app-logs
+   59  pwd
+   60  cd ..
+   61  ll
+   62  find . -name app-logs
+   63  cd hadoop
+   64  ll
+   65  cd ..
+   66  ll
+   67  cd media/
+   68  ll
+   69  pwd
+   70  cd /hadoop/hdfs/data/
+   71  ll
+   72  cd current/
+   78  ll
+   79  history
+   80  hadoop fs -ls
+   81  hadoop fs -ls /
+   82  LL
+   83  ll
+   84  hadoop -fs cat in_use.lock 
+   85  cat in_use.lock 
+   86  ll
+   87  hadoop -fs text in_use.lock 
+   88  hadoop -fs ls
+   89  hadoop fs cat in_use.lock 
+   90  ll
+   91  cat in_use.lock 
+   92  hadoop fs -cat in_use.lock 
+   93  ll
+   94  hadoop fs -ls /
+   95  hadoop fs -ls 
+   96  hadoop fs -mkdir sahara
+   97  hadoop fs -ls 
+   98  hadoop fs -ls /
+   99  cd /hadoop/hdfs/data
+  100  ll
+  101  cd current/
+  102  ll
+  103  cd ..
+  104  ll
+  105  fs -ls
+  106  pwd
+  107  hadoop fs -ls 
+  108  cd /usr/root
+  109  wd
+  110  ll
+  111  cd /root
+  112  ll
+  113  find / sahara
+  114  find / -name sahara
+  115  find / -name hadoop
+  116  ll
+  117  cd /media/sf_workspace/
+  118  ll
+  119  "Hello World" > hello.txt
+  120  ll
+  121  hadoop fs -put hello.txt 
+  122  hadoop fs -ls
+  123  ll
+  124  cd /media/sf_workspace/
+  125  ll
+  126  rm -f hello.txt 
+  127  ll
+  128  hadoop fs -ls
+  129  find / -name hello.txt
+  130  ll
+  131  hadoop fs -ls
+  132  hadoop fs -ls /usr/hue
+  133  hadoop fs -ls /user/hue
+  134  ll
+  135  pwd
+  136  hadoop fs
+  137  cd /user/root
+  138  ll
+  139  pwd
+  140  hadoop fs -ls
+  141  hadoop fs -mkdir test
+  142  ll
+  143  hadoop fs -ls
+  144  ll
+  145  hadoop fs -mkdir test/test1
+  146  hadoop fs -mkdir test/test2
+  147  hadoop fs -mkdir test/test2/test3
+  148  hadoop fs -ls
+  149* 
+  150  hadoop fs -ls
+  151  hadoop fs -ls -R
+  152  hadoop fs -rm -R test/test2
+  153  hadoop fs -ls -R
+  154  cd ~/labs/Lab2.1
+  155  cd ~
+  156  ll
+  157  pwd
+  158  cd /media/sf_workspace/
+  159  ll
+  160  pwd
+  161  ll
+  162  cd Lab2.1/
+  163  ll
+  164  tail data.txt 
+  165  hadoop fs -put data.txt test/
+  166  hadoop fs ls test
+  167  hadoop fs -ls test
+  168  hadoop
+  169  hadoop fs -ls .
+  170  hadoop fs -ls -R
+  171  hadoop fs -ls /user
+  172  pwd
+  173  ll
+  174  tail data.txt 
+  175  head data.txt 
+  176  ll
+  177  hadoop fs -ls test
+  178  hadoop fs -cp test/data.txt test/test1/
+  179  hadoop fs -ls test/test1/
+  180  hadoop
+  181  hadoop fs
+  182  hadoop fs cd test/test2
+  183  hadoop fs -cd test/test2
+  184  hadoop fs -ls test/test2
+  185  hadoop fs -ls -R test/
+  186  hadoop fs -mv test/test1/data.txt test/test1/data1.txt
+  187  hadoop fs -ls -R test/
+  188  hadoop fs -ls
+  189  hadoop fs -ls 
+  190  hadoop fs -ls test
+  191  hadoop fs -mv test/test1/data1.txt test/test1/data2.txt
+  192  hadoop fs -ls -R
+  193  ll
+  194  hadoop fs -rm test/test1/data2.txt
+  195  hadoop fs -tail test/data.txt
+  196  hadoop fs -getmerge test /tmp/merged.txt
+  197  hdfs fsck /user/root/data.txt
+  198  hadoop fs -ls -R
+  199  hadoop fs -ls -R > hadoop_file_list.txt
+  200  ll
+  201  cat hadoop_file_list.txt 
+  202  hadoop fs -ls -R |grep test1
+  203  pwd
+  204  ll
+  205  wc -l data.txt 
+  206  head data.txt 
+  216  ll
+  217  hadoop fs -ls /tmp
+  218  ll /tmp
+  219  pwd
+  220  date
+  221  ll
+  222  pwd
+  223  ll
+  224  history
+  225  ll /tmp/merged.txt
+  234  history
+  235  hadoop fs -getmerge test /tmp/merged.txt
+  236  sort merged.txt |uniq -dc |wc -l
+  237  wc -l merged.txt
+  238  hadoop fs -getmerge test /tmp/merged.txt
+  239  wc -l merged.txt
+  240  pwd
+  241  hadoop fs -ls test
+  242  hadoop fs -getmerge test/data.txt /tmp/merged.txt
+  243  wc -l merged.txt
+  244  tail /tmp/merged.txt 
+  245  ll
+  246  history
+  247  hadoop fs 
+  248  history
+  249  ll
+  250  pwd
+  251  hadoop fs -get /test/data.txt /tmp/
+  252  hadoop fs -ls -R
+  253  hadoop fs -get test/data.txt /tmp/
+  254  ll
+  255  cd /media/
+  256  ll
+  257  cd sf_workspace/
+  258  ll
+  259  cd Lab2.1/
+  260  ll
+  261  hadoop fs -copyFromLocal small_blocks.txt text/
+  262  hadoop fs -copyFromLocal small_blocks.txt test/
+  263  hadoop fs -getmerge text /tmp/merged.txt 
+  264  hadoop fs -getmerge test /tmp/merged.txt 
+  265  wc -l /tmp/merged.txt 
+  266  ll
+  267  pwd
+  268  cp /tmp/merged.txt sample.txt
+  269  ll
+  270  hadoop fs -getmerge test /tmp/merged.txt 
+  271  wc -l /tmp/merged.txt 
+  272  hadoop fs put sample.txt test/
+  273  hadoop fs -put sample.txt test/
+  274  hadoop fs -getmerge test /tmp/merged.txt 
+  275  wc -l /tmp/merged.txt 
+  276  head /tmp/merged.txt 
+  277  grep ^cccc /tmp/merged.txt 
+  278  ll /tmp/
+  279  ll
+  280  pwd
+  281  hadoop fs -ls 
+  282  hadoop fs -ls test
+  283  hadoop fs -cat test/small_block.txt
+  284  hadoop fs -cat test/small_blocks.txt
+  285  ll
+  286  grep ^[a-z][ ]* /tmp/merged.txt 
+  287  grep ^[a-z]\s* /tmp/merged.txt 
+  288  grep ^[a-z]\s* -lH /tmp/merged.txt 
+  289  grep ^[a-z]\s* -l /tmp/merged.txt 
+  290  grep ^[a-z]\s* -n /tmp/merged.txt 
+  291  pwd
+  292  cat small_blocks.txt 
+  293  hadoop fs
+  294  hadoop fs -D dfs.block.size=1048576 -put data.txt
+  295  hdfs dfs /user/root/data.txt
+  296  hdfs fdsk /user/root/data.txt
+  297  hdfs fdisk /user/root/data.txt
+  298  hdfs fsck /user/root/data.txt
+  299  hdfs fdisk /user/root/test/data.txt
+  300  hdfs fsck /user/root/test/data.txt
+  301  history
+  302   hadoop fs -D dfs.block.size=548576 -put data.txt
+  303  hdfs fdsk /user/root/data.txt
+  304  hdfs fsck /user/root/data.txt
+  305  history
+  306  history > history.txt
