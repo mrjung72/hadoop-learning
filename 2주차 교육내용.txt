@@ -1,0 +1,32 @@
+강사 PC : com2-2-pc
+
+
+암바리 ID/PW : admin/admin/
+
+host명 : sandbox.hortonworks.com
+host ip : 127.0.0.1
+port : 8888 - 튜토리얼, 8080 - 암바리, 8000 - hue
+userid/pwd root/hadoop
+
+
+작업디렉토리 위치
+/media/
+
+
+실제 서버에 설치시에는
+암바리를 먼저 설치후 암바리에서 기타 솔류션을 셋팅한다.
+
+
+VM 종료 명령 : shutdown -h 0
+
+
+ 아래 명령어로 출력되는 디렉토리와 매치되는 OS디렉토리는
+ hadoop fs -ls /
+ 암바리 웹 대시보드 HDFS 의 CONFIG 에 DataNode directories 에 정의되어 있다.
+ 
+ 
+ 
+Scoop : 기존 RDB와 HDFS 간의 데이터 전송을 솔류션이다.
+Flume 
+
+
